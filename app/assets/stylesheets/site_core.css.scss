@@ -36,18 +36,11 @@ border-bottom-left-radius: 15px;
 border-bottom-right-radius: 15px;
 }
 
-#content {
+#main {
 background-color:rgb(230, 230, 230);
 overflow:hidden;
 border-top: 1px solid rgb(200, 200, 200);
-}
-
-#main {
-background-color: rgba(230, 230, 230, 1);
 padding: 0.1em 1em 0.2em 1em;
-width:75%;
-float:right;
-border-left: 1px solid black;
 }
 
 footer {

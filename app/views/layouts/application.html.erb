@@ -9,20 +9,12 @@
 </head>
   <body id="<%= yield(:bodyid) %>">
     <div id="container">
-      
       <%= render 'layouts/header' %>
       <%= render 'layouts/navigation' %>
-      <div id="content">
-
-      
-        
-        <div id="main">
+      <div id="main">
       <%= yield %>
-        </div>
       </div>
-  
       <%= render 'layouts/footer' %>
-      
     </div>
 </body>
 </html>
