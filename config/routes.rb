@@ -7,11 +7,11 @@ Site::Application.routes.draw do
   get "site_core/howtogetthere"
   
   root :to => 'site_core#index'
-  match '/about', to => 'site_core#about'
-  match '/howtojoin', to => 'site_core#howtojoin'
-  match '/whatyouneed', to => 'site_core#whatyouneed'
-  match '/clubmatters', to => 'site_core#clubmatters'
-  match '/howtogetthere', to => 'site_core#howtogetthere'
+  match '/about', :to => 'site_core#about'
+  match '/howtojoin', :to => 'site_core#howtojoin'
+  match '/whatyouneed', :to => 'site_core#whatyouneed'
+  match '/clubmatters', :to => 'site_core#clubmatters'
+  match '/howtogetthere', :to => 'site_core#howtogetthere'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
