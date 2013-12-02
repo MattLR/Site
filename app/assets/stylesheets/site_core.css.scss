@@ -2,6 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+#topstuff {
+position: relative;
+clear: both;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+background-color: rgb(230, 230, 230);
+overflow: hidden;
+}
+
+nav {
+vertical-align: middle;
+width: 100%;
+line-height:2.5em;
+font-size: 1.2em;
+color: rgb(100, 100, 100);
+float: left;
+}
+
+nav a {
+text-decoration: none;
+color: rgb(50, 50, 50);
+padding:0 0.5em;
+height: 100%;
+}
+
+nav ul {
+list-style-type:none;
+margin:0;
+padding:0;
+}
+
+nav ul li {
+display:inline;
+}
+
 header {
 background-image:url('header.png');
 background-repeat:no-repeat;
@@ -9,14 +46,28 @@ background-position: center center;
 height: 360px;
 }
 
-nav {
-}
-
 footer {
 }
 
 #container {
+margin: 0 auto;
+width: 90%;
+margin-bottom: 2em;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
 }
 
 #main {
+}
+
+footer {
+background: none repeat scroll 0% 0% rgb(255, 255, 255);
+width: 100%;
+text-align: center;
+-webkit-border-bottom-left-radius: 15px;
+-webkit-border-bottom-right-radius: 15px;
+-moz-border-radius-bottomleft: 15px;
+-moz-border-radius-bottomright: 15px;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
 }

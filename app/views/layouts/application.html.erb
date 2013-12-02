@@ -9,11 +9,14 @@
 </head>
   <body id="<%= yield(:bodyid) %>">
     <div id="container">
+      <div id="topstuff">
       <%= render 'layouts/navigation' %>
-      
+      </div>
       <%= render 'layouts/header' %>
-
+      
+      <div id="main">
       <%= yield %>
+      </div>
   
       <%= render 'layouts/footer' %>
       
