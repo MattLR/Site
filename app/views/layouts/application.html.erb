@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en-GB">
 <head>
-  <title>Site</title>
+  <title><%= title%></title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -13,7 +13,9 @@
       <%= render 'layouts/header' %>
       
       <div id="content">
+
       <%= render 'layouts/navigation' %>
+        
         <div id="main">
       <%= yield %>
         </div>
