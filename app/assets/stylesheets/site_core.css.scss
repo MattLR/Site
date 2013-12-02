@@ -2,14 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+body {
+background-color: rgba(255, 255, 255, 1);
+font: 1em calibri, helvetica, sans-serif;
+background-image: "noise.png"; 
+background-size: 10px;
+}
 
 #topstuff {
 position: relative;
 clear: both;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
-background-color: rgb(230, 230, 230);
+background-color: rgba(230, 230, 230, 1);
 overflow: hidden;
 }
 
@@ -20,6 +25,7 @@ line-height:2.5em;
 font-size: 1.2em;
 color: rgb(100, 100, 100);
 float: left;
+position: relative;
 }
 
 nav a {
@@ -33,10 +39,31 @@ nav ul {
 list-style-type:none;
 margin:0;
 padding:0;
+position:relative;
 }
 
-nav ul li {
-display:inline;
+nav li {
+float: left;
+position:relative;
+}
+
+nav li + li {
+border-left:1px solid rgb(176, 176, 176)
+}
+
+nav li ul {
+position: relative;
+white-space:no-wrap;
+ left: -9999;
+}
+
+nav li:hover ul {
+display: block;  
+background:bloack;
+left: 0;
+}
+nav li ul li {
+float: none;
 }
 
 header {
@@ -58,6 +85,7 @@ border-bottom-right-radius: 15px;
 }
 
 #main {
+background-color: rgba(230, 230, 230, 1);
 }
 
 footer {
