@@ -1,38 +1,43 @@
 <nav>
   <ul>
     <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "About", about_path %></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li><a>Club Information</a>
+      <ul>
+        <li><%= link_to "About", about_path %></li>
+        <li> <%= link_to "Club Matters", clubmatters_path %></li>
+        <li> <%= link_to "How to Get There", howtogetthere_path %></li>
+        <li> <%= link_to "How to Join", howtojoin_path %></li>
+        <li> <%= link_to "What you need", whatyouneed_path %></li>
+      </ul>
+    </li>
     <li><a>Links to Croquet Sites</a>
       <ul>
-        <li><a href="http://cornwall-croquet.org.uk/croquet_glossary.htm"></a></li>
-        <li><a href="http://www.thecroquetacademy.com/"></a></li>
-        <li><a href="http://www.southeastcroquet.org.uk/"></a></li>
         <li><a>The Croquet Association</a>
           <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="http://www.croquet.org.uk/">CA Home Page</a></li>
+            <li><a href="http://www.croquet.org.uk//tournament">CA Events</a></li>
         </ul>
         </li>
-        <li><a href="http://cornwall-croquet.org.uk/croquet_glossary.htm"></a></li>
+        <li><a href="http://www.southeastcroquet.org.uk/">SECF</a></li>
+        <li><a href="http://www.thecroquetacademy.com/">Croquet Academy</a></li>
         <li><a>Croquet Equipment</a>
           <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="http://www.oxfordcroquet.com/equip/">Mallets, etc.</a></li>
+            <li><a href="http://www.bowlsdirect.com/contact.htm">Whites</a></li>
+          </ul>
+        </li>
+        <li><a href="http://cornwall-croquet.org.uk/croquet_glossary.htm">Croquet Glossary</a></li>
+        <li><a>Croquet Rules</a>
+          <ul>
+            <li><a href="http://www.croquet.org.uk/association/laws.html">Association Rules</a></li>
+            <li><a href="http://www.croquet.org.uk/golf/laws/contents.htm">Golf Rules</a></li>
           </ul>
         </li>
         
       </ul>
     </li>
-    <li> <%= link_to "Club Matters", clubmatters_path %></li>
-    <li> <%= link_to "How to Get There", howtogetthere_path %></li>
-    <li> <%= link_to "How to Join", howtojoin_path %></li>
-    <li> <%= link_to "What you need", whatyouneed_path %></li>
-    <li> <%= link_to "Bookings", whatyouneed_path %></li>
-    <li> <%= link_to "Newsletters", whatyouneed_path %></li>
-    <li> <%= link_to "Programmes", whatyouneed_path %></li>
+     <li> <%= link_to "Bookings", whatyouneed_path %></li>
+     <li> <%= link_to "Newsletters", whatyouneed_path %></li>
+     <li> <%= link_to "Programmes", whatyouneed_path %></li>
   </ul>
 </nav>

@@ -1,0 +1,84 @@
+nav {
+vertical-align: middle;
+line-height:1.5em;
+font-size: 1em;
+color: rgb(100, 100, 100);
+}
+
+nav a {
+text-decoration: none;
+color: rgb(60, 60, 60);
+padding:0 0.5em;
+}
+
+nav ul ul {
+display: none;
+}
+
+nav ul li:hover > ul {
+display: block;
+}
+	
+nav ul {
+background: rgb(239, 239, 239); 
+background: linear-gradient(to bottom, rgb(239, 239, 239) 0%, rgb(187, 187, 187) 100%);
+margin: 0;  
+list-style: none;
+position: relative;
+}
+
+nav ul:after {
+content: "";
+clear: both;
+display: block;
+}
+	
+nav ul li {
+float: left;
+}
+
+nav ul li:hover {
+background:  rgb(75, 84, 95);
+background: linear-gradient(to bottom, rgb(79, 89, 89) 0%, rgb(95, 105, 117) 40%);
+}
+
+nav ul li:hover a {
+color:  rgb(255, 255, 255);
+}
+	
+nav ul li a {
+display: block; 
+padding: 1em 1.5em;
+color: rgb(117, 117, 117); 
+text-decoration: none;
+
+}
+
+nav ul ul {
+background: rgb(95, 105, 117); 
+border-radius: 0px; 
+padding: 0;
+position: absolute; 
+top: 100%;
+}
+
+nav ul ul li {
+float: none; 
+border-top: 1px solid rgb(107, 114, 124);
+border-bottom: 1px solid rgb(87, 95, 106);
+position: relative;
+}
+
+nav ul ul li a {
+color: rgb(255, 255, 255);
+}	
+
+nav ul ul li a:hover {
+background:solid rgb(75, 84, 95);
+}
+			
+nav ul ul ul {
+position: absolute; 
+left: 100%; 
+top:0;
+}
