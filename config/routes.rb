@@ -1,4 +1,6 @@
 Site::Application.routes.draw do
+  resources :newsletters
+
   resources :events
 
   devise_for :users

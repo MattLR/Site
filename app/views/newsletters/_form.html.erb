@@ -1,10 +1,10 @@
-<%= form_for(@event)  do |f| %>
-  <% if @event.errors.any? %>
+<%= form_for(@newsletter) do |f| %>
+  <% if @newsletter.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+      <h2><%= pluralize(@newsletter.errors.count, "error") %> prohibited this newsletter from being saved:</h2>
 
       <ul>
-      <% @event.errors.full_messages.each do |msg| %>
+      <% @newsletter.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
@@ -19,11 +19,10 @@
     <%= f.label :date %><br>
     <%= f.date_select :date %>
   </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </div>
-
+<div class = "field">
+  <%= f.label :pdf %>
+               <%= f.file_field :pdf %>
+              </div>
   <div class="actions">
     <%= f.submit %>
   </div>
