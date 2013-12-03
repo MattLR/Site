@@ -3,6 +3,7 @@ vertical-align: middle;
 line-height:1.5em;
 font-size: 1em;
 color: rgb(100, 100, 100);
+
 }
 
 nav a {
@@ -11,14 +12,6 @@ color: rgb(60, 60, 60);
 padding:0 0.5em;
 }
 
-nav ul ul {
-display: none;
-}
-
-nav ul li:hover > ul {
-display: block;
-}
-	
 nav ul {
 background: rgb(239, 239, 239); 
 background: linear-gradient(to bottom, rgb(239, 239, 239) 0%, rgb(187, 187, 187) 100%);
@@ -32,6 +25,10 @@ content: "";
 clear: both;
 display: block;
 }
+
+nav ul ul {
+display: none;
+}
 	
 nav ul li {
 float: left;
@@ -44,6 +41,10 @@ background: linear-gradient(to bottom, rgb(79, 89, 89) 0%, rgb(95, 105, 117) 40%
 
 nav ul li:hover a {
 color:  rgb(255, 255, 255);
+}
+
+nav ul li:hover > ul {
+display: block;
 }
 	
 nav ul li a {

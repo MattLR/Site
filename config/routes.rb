@@ -1,4 +1,7 @@
 Site::Application.routes.draw do
+  resources :events
+
+  devise_for :users
   get "site_core/index"
   get "site_core/about"
   get "site_core/howtojoin"
